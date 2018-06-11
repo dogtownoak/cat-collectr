@@ -181,10 +181,10 @@
 
 	```html
 	{% for cat in cats %}
-  	<p>Name: {{ cat.name }}</p>
-		<p>Age: {{ cat.age }}</p>
-    <hr />
-  {% endfor %}
+  	    <p>Name: {{ cat.name }}</p>
+	    <p>Age: {{ cat.age }}</p>
+	    <hr />
+	{% endfor %}
 	```
 
 	Check out our index file on your browser and you should see our cats displayed on the screen!
