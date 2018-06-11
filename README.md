@@ -124,14 +124,14 @@
 	<!DOCTYPE html>
 	<html>
 	  <head>
-			<title>CatCollectr</title>
+	    <title>CatCollectr</title>
 	  </head>
 	  <body>
-      <h1>CatCollectr</h1>
-      <hr />
-      <footer>All Rights Reserved, CatCollectr 2018</footer>
+	    <h1>CatCollectr</h1>
+	    <hr />
+	    <footer>All Rights Reserved, CatCollectr 2018</footer>
 	  </body>
-  </html>
+	</html>
 	```
 
 	- In our `views.py` we will now be **rendering** our template instead of sending HTTP responses, so so we can update our views.py to only import render from django.shortcuts.  Feel free to delete the line importing HttpResponse.
@@ -201,7 +201,6 @@
 		{% endif %}
 		  <hr />
 	{% endfor %}
-
 	```
 
 5. We need to spruce up our view with some style!
@@ -257,7 +256,7 @@ You should now have a boring but completely functional application that will pul
 	    name = models.CharField(max_length=100)
 	    breed = models.CharField(max_length=100)
 	    description = models.CharField(max_length=250)
-      age = models.IntegerField()
+     	age = models.IntegerField()
 	```
 
 2.  We will also need to run a `migration`. A migration is a database action that makes any necessary changes to your db tables to prepare for storing specific data attributes of your models. Think of it as a construction team building a house to your specifications. But wait a minute! Django defaults to using sqlite... I want to use postgresql! Let's fix that before we do any migrating! Let's go back into the `settings.py` file in the CatCollectr directory and change a few things.
